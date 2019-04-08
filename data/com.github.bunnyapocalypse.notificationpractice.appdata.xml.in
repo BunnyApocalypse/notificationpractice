@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2019 Chris King <bunnyapocalypse@protonmail.com> -->
+<component type="desktop">
+  <id>com.github.bunnyapocalypse.notificationpractice</id>
+  <metadata_license>CC0</metadata_license>
+  <name>Notify</name>
+  <summary>An application that sends notifications</summary>
+  <description>
+    <p>Click the button to send a notification</p>
+  </description>
+</component>

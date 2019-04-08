@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Notify
+GenericName=An app that gets hurt when you click it, annoying...
+Categories=Education;
+Exec=com.github.bunnyapocalypse.notificationpractice
+Icon=application-default-icon
+Terminal=false
+Type=Application
+Keywords=Notify;
+X-GNOME-UsesNotifications=true
