@@ -49,6 +49,9 @@ public class MyApp : Gtk.Application {
      
         show_button.clicked.connect (() => {
             var notification = new Notification (_("Ouch, you clicked me!"));
+            var icon = new GLib.ThemedIcon ("media-tape");
+            notification.set_icon (icon);
+            
             notification.set_body (_("That really hurt!"));
             this.send_notification ("notify.app", notification);
         });
