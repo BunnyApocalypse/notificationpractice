@@ -41,19 +41,33 @@ public class MyApp : Gtk.Application {
         var title_label = new Gtk.Label (_("Notifications"));
         var show_button = new Gtk.Button.with_label (_("Show"));
         
+        var replace_button = new Gtk.Button.with_label (_("Replace"));
+        
         grid.add (title_label);
         grid.add (show_button);
+        grid.add (replace_button);
         
         main_window.add (grid);
         main_window.show_all ();
      
         show_button.clicked.connect (() => {
             var notification = new Notification (_("Ouch, you clicked me!"));
+            notification.set_body (_("That really hurt!"));
             var icon = new GLib.ThemedIcon ("media-tape");
             notification.set_icon (icon);
+            notification.set_priority (NotificationPriority.URGENT);
             
-            notification.set_body (_("That really hurt!"));
-            this.send_notification ("notify.app", notification);
+            this.send_notification ("com.github.bunnyapocalypse.applicationpractice", notification);
+        });
+        
+        replace_button.clicked.connect (() => {
+            var notification = new Notification (_("Replacement"));
+            notification.set_body (_("Let's get rid of that complainer"));
+            
+            var icon = new GLib.ThemedIcon ("audio-volume-muted");
+            notification.set_icon (icon);
+            
+            this.send_notification ("com.github.bunnyapocalypse.applicationpractice", notification);
         });
     }
     

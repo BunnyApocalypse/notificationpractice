@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.bunnyapocalypse.notificationpractice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-07 21:31-0500\n"
+"POT-Creation-Date: 2019-04-07 21:44-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: src/Application.vala:35
+#: data/com.github.bunnyapocalypse.notificationpractice.desktop.in:3
+#: data/com.github.bunnyapocalypse.notificationpractice.appdata.xml.in:6
 msgid "Notify"
 msgstr ""
 
@@ -29,20 +31,28 @@ msgstr ""
 msgid "Show"
 msgstr ""
 
-#: src/Application.vala:51
+#: src/Application.vala:44
+msgid "Replace"
+msgstr ""
+
+#: src/Application.vala:54
 msgid "Ouch, you clicked me!"
 msgstr ""
 
-#: src/Application.vala:52
+#: src/Application.vala:58
 msgid "That really hurt!"
 msgstr ""
 
-#: data/com.github.bunnyapocalypse.notificationpractice.desktop.in:3
-msgid "Clicky App"
+#: src/Application.vala:63
+msgid "Replacement"
+msgstr ""
+
+#: src/Application.vala:64
+msgid "Let's get rid of that complainer"
 msgstr ""
 
 #: data/com.github.bunnyapocalypse.notificationpractice.desktop.in:4
-msgid "An app with a mysterious button, what does it do?"
+msgid "An app that gets hurt when you click it, annoying..."
 msgstr ""
 
 #: data/com.github.bunnyapocalypse.notificationpractice.desktop.in:7
@@ -50,17 +60,13 @@ msgid "application-default-icon"
 msgstr ""
 
 #: data/com.github.bunnyapocalypse.notificationpractice.desktop.in:10
-msgid "Clicky;Button;Packaging;"
-msgstr ""
-
-#: data/com.github.bunnyapocalypse.notificationpractice.appdata.xml.in:6
-msgid "Clicky Clicky"
+msgid "Notify;"
 msgstr ""
 
 #: data/com.github.bunnyapocalypse.notificationpractice.appdata.xml.in:7
-msgid "An application with a mysterious button"
+msgid "An application that sends notifications"
 msgstr ""
 
 #: data/com.github.bunnyapocalypse.notificationpractice.appdata.xml.in:9
-msgid "Click the button if you dare, it is pretty and in a window"
+msgid "Click the button to send a notification"
 msgstr ""
