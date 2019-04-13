@@ -43,6 +43,12 @@ public class MyApp : Gtk.Application {
         
         var replace_button = new Gtk.Button.with_label (_("Replace"));
         
+        var entry = Unity.LauncherEntry.get_for_desktop_id ("com.github.bunnyapocalypse.notificationpractice.desktop");
+        entry.count_visible = true;
+        entry.count = 9;
+        entry.progress_visible = true;
+        entry.progress = 0.49f;
+        
         grid.add (title_label);
         grid.add (show_button);
         grid.add (replace_button);
